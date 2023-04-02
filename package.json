@@ -1,4 +1,5 @@
-{
+{ 
+  "homepage": " https://khizarq313.github.io/to-do-react/",
   "name": "to-do-app",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +21,6 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },  
-  "homepage": " https://github.com/khizarq313/to-do-react/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
