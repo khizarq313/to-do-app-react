@@ -55,7 +55,7 @@ export const Todo = (props: Props) => {
            && 
           <div className='w-full text-lg'>
             <img className='h-80' src={image} alt="" />
-            <p  className='border-b-2 border-black mt-20'>No tasks in list, add some new</p>
+            <p>No tasks in list, add some new</p>
           </div>
         }
         {

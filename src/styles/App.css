@@ -29,15 +29,8 @@
   .panel-btns>button {
     width: 6rem
   }
-  @media screen and (max-width: 600px) {
-    html {
-      font-size: 75%;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    html {
-      font-size: 65%;
-    }
+  .panel-btns::before {
+    content: "";
   }
 }
 
@@ -46,7 +39,7 @@
 }
 
 html {
-  @apply sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-lg;
+  @apply sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base;
 }
 
 body {
@@ -58,7 +51,7 @@ body {
 }
 
 .app-title {
-  @apply fixed text-white left-10 top-10 text-3xl;
+  @apply text-white p-10 text-left left-10 top-10 text-3xl;
 }
 
 .Clock {
@@ -122,9 +115,18 @@ body {
 }
 
 .panel-btns {
-  @apply flex justify-evenly absolute bottom-3 items-center w-11/12 h-6 pt-2 bg-transparent;
+  @apply flex justify-evenly absolute bottom-3 items-center w-11/12 h-6 pt-2 bg-transparent before:bg-my-bg before:h-full before:w-full before:absolute before:blur-sm before:-z-50;
 }
 
 .signature-text {
   @apply fixed bottom-5 right-5 text-sm;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 90%;
+  }
+  .app-title {
+    @apply p-6;
+  }
 }
