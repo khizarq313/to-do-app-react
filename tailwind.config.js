@@ -9,8 +9,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'my-purple': '#8758ff',
-        'my-bg': '#1A1A40',
+        'my-blue': '#1e41b9',
+        'my-red': '#de2a52',
+        'my-teal': '#4279e4',
       },
     },
   },

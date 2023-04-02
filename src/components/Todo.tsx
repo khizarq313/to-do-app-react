@@ -86,15 +86,15 @@ export const Todo = (props: Props) => {
         }
         </div>
         <div className='panel-btns'>
-          <button className={panel === 'all'? 'text-my-purple' : 'text-gray-500'} 
+          <button className={panel === 'all'? 'text-my-blue' : 'text-gray-500'} 
             onClick={() => (changePanel("all"))}>
             All
           </button>
-          <button className={panel === 'active'? 'text-my-purple' : 'text-gray-500'} 
+          <button className={panel === 'active'? 'text-my-blue' : 'text-gray-500'} 
             onClick={() => (changePanel("active"))}>
             Active
           </button>
-          <button className={panel === 'completed'? 'text-my-purple' : 'text-gray-500'} 
+          <button className={panel === 'completed'? 'text-my-blue' : 'text-gray-500'} 
             onClick={() => (changePanel("completed"))}>
             Completed
           </button>

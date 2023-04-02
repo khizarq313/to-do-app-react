@@ -12,7 +12,7 @@
     max-height: 27rem;
   }
   .complete {
-    color: #c5aeff;
+    color: #4279e4;
     text-decoration: line-through;
   }
   .task-list::-webkit-scrollbar {
@@ -59,7 +59,7 @@ body {
 }
 
 .TodoWrapper {
-  @apply fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-my-bg p-3 rounded-md shadow-xl;
+  @apply fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-my-red p-3 rounded-md shadow-xl;
 }
 
 .TodoForm {
@@ -75,7 +75,7 @@ body {
 }
 
 .todo-input {
-  @apply outline-none bg-none border-2 border-solid border-my-purple px-4 py-1 w-52 text-black rounded-l-md;
+  @apply outline-none bg-none px-4 py-1 w-52 text-black rounded-l-sm;
 }
 
 .todo-input::placeholder {
@@ -83,7 +83,7 @@ body {
 }
 
 .todo-btn {
-  @apply bg-my-purple border-2 border-solid border-my-purple p-1 cursor-pointer w-28 rounded-r-md;
+  @apply bg-my-teal p-1 cursor-pointer w-28 rounded-r-sm;
 }
 
 .Todo {
@@ -91,7 +91,7 @@ body {
 }
 
 .task-list {
-  @apply w-full max-h-27rem overflow-auto justify-between items-center ;
+  @apply w-full max-h-27rem overflow-auto justify-between bg-transparent items-center ;
 }
 
 .fa-trash {
@@ -103,7 +103,7 @@ body {
 }
 
 .highlight {
-  @apply  text-white bg-my-purple  border-my-purple;
+  @apply  text-white bg-my-teal  border-my-teal;
 }
 
 .completed {
@@ -115,7 +115,7 @@ body {
 }
 
 .panel-btns {
-  @apply flex justify-evenly absolute bottom-3 items-center w-11/12 h-6 pt-2 bg-transparent before:bg-my-bg before:h-full before:w-full before:absolute before:blur-sm before:-z-50;
+  @apply flex justify-evenly absolute bottom-3 items-center w-11/12 h-6 pt-2;
 }
 
 .signature-text {

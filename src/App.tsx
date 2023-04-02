@@ -10,7 +10,7 @@ function App() {
       <a href="https://github.com/khizarq313" 
         target="_blank" 
         rel="noreferrer"
-        className="signature-text">
+        className="signature-text hover:text-my-blue">
         -Muhammad Khizar
       </a>
     </div>
