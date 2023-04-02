@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import { TodoWrapper } from './components/TodoWrapper';
+import { BGLayout } from './components/BGLayout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BGLayout />
+      <TodoWrapper />
+      <a href="https://github.com/khizarq313" 
+        target="_blank" 
+        rel="noreferrer"
+        className="signature-text">
+        -Muhammad Khizar
+      </a>
     </div>
   );
 }

@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@layer utilities {
+  .h-30rem {
+    height: 30rem;
+  }
+  .max-h-27rem {
+    max-height: 27rem;
+  }
+  .complete {
+    color: #c5aeff;
+    text-decoration: line-through;
+  }
+  .task-list::-webkit-scrollbar {
+    width: 2px;
+  }
+  .task-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px transparent;
+  }
+  .task-list::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 1rem;
+    outline: solid 1px gray;
+  }
+  .panel-btns>button {
+    width: 6rem
+  }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 65%;
+    }
+  }
+}
+
+* {
+  @apply m-0 p-0 box-border font-sans;
+}
+
+html {
+  @apply sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-lg;
+}
+
+body {
+  @apply flex;
+}
+
+.App {
+  @apply text-center;
+}
+
+.app-title {
+  @apply fixed text-white left-10 top-10 text-3xl;
+}
+
+.Clock {
+  @apply text-white w-full flex flex-col items-start p-2;
+}
+
+.TodoWrapper {
+  @apply fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-my-bg p-3 rounded-md shadow-xl;
+}
+
+.TodoForm {
+  @apply w-full flex items-center justify-between mt-1 mb-2 text-white;
+}
+
+.task {
+  @apply text-lg flex w-full items-center justify-between text-left p-1 border-b-2 border-black;
+}
+
+.task-data {
+  @apply w-52 cursor-default;
+}
+
+.todo-input {
+  @apply outline-none bg-none border-2 border-solid border-my-purple px-4 py-1 w-52 text-black rounded-l-md;
+}
+
+.todo-input::placeholder {
+  @apply bg-white bg-opacity-30;
+}
+
+.todo-btn {
+  @apply bg-my-purple border-2 border-solid border-my-purple p-1 cursor-pointer w-28 rounded-r-md;
+}
+
+.Todo {
+  @apply relative h-30rem flex flex-col bg-white text-black p-3 rounded-md;
+}
+
+.task-list {
+  @apply w-full max-h-27rem overflow-auto justify-between items-center ;
+}
+
+.fa-trash {
+  @apply ml-3;
+}
+
+.checkbox {
+  @apply h-7 w-7 flex items-center justify-center border-x border-y border-solid m-2 ml-0 rounded-sm;
+}
+
+.highlight {
+  @apply  text-white bg-my-purple  border-my-purple;
+}
+
+.completed {
+  @apply complete;
+}
+
+.horizontal-line {
+  @apply w-full bg-black h-0.5 block;
+}
+
+.panel-btns {
+  @apply flex justify-evenly absolute bottom-3 items-center w-11/12 h-6 pt-2 bg-transparent;
+}
+
+.signature-text {
+  @apply fixed bottom-5 right-5 text-sm;
+}
