@@ -4,8 +4,8 @@
 For more on react check [Create React App](https://github.com/facebook/create-react-app).
 
 ## Screenshots:
-    ![alt text](Screenshot_20240510_182053.png)
-    ![alt text](Screenshot_20240510_182151.png)
+![alt text](Screenshot_20240510_182053.png)
+![alt text](Screenshot_20240510_182151.png)
 
 ## Available Scripts
 
