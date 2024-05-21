@@ -55,11 +55,11 @@ body {
 }
 
 .Clock {
-  @apply text-white w-full flex flex-col items-start p-2;
+  @apply text-black w-full flex flex-col items-start p-2;
 }
 
 .TodoWrapper {
-  @apply fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-my-red p-3 rounded-md shadow-xl;
+  @apply fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-my-teal p-3 rounded-md shadow-xl;
 }
 
 .TodoForm {
@@ -83,7 +83,7 @@ body {
 }
 
 .todo-btn {
-  @apply bg-my-teal p-1 cursor-pointer w-28 rounded-r-sm;
+  @apply bg-my-lightblue p-1 cursor-pointer w-28 rounded-r-sm;
 }
 
 .Todo {
@@ -103,7 +103,7 @@ body {
 }
 
 .highlight {
-  @apply  text-white bg-my-teal  border-my-teal;
+  @apply  text-white bg-my-lightblue  border-my-lightblue;
 }
 
 .completed {

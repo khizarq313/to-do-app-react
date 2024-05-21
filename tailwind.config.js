@@ -10,8 +10,8 @@ module.exports = {
     extend: {
       colors: {
         'my-blue': '#1e41b9',
-        'my-red': '#de2a52',
-        'my-teal': '#4279e4',
+        'my-teal': '#00c5bb',
+        'my-lightblue': '#4279e4',
       },
     },
   },
